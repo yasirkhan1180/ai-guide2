@@ -8,7 +8,7 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.ai-guide.site/',
   siteRepo: 'https://github.com/yasirkhan1180/ai-guide2',
-  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`, // Fixed: Removed /public prefix
+  siteLogo: `${process.env.BASE_PATH || ''}static/images/logo.png`, // Fixed: Removed /public prefix
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   email: 'contact@ai-guide.site',
   github: 'https://github.com/yasirkhan1180', // Updated with your actual profile

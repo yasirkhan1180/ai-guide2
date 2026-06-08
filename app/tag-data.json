@@ -1,8 +1,17 @@
 {
-  "multi-author": 1,
-  "next-js": 1,
-  "feature": 1,
-  "markdown": 1,
-  "code": 1,
-  "features": 1
+  "creative-writing": 1,
+  "data-modeling": 1,
+  "sci-fi": 1,
+  "ai": 2,
+  "e-commerce": 1,
+  "automation": 1,
+  "business": 1,
+  "edge-computing": 1,
+  "iot": 1,
+  "machine-learning": 1,
+  "architecture": 1,
+  "nextjs": 1,
+  "react": 1,
+  "web-development": 1,
+  "uiux": 1
 }
