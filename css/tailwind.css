@@ -6,13 +6,6 @@
 
 /* Core theme configuration */
 @theme {
-  /* ⚡ FORCED DESKTOP BREAKPOINTS: Triggers desktop classes at 1px wide */
-  --breakpoint-sm: 1px;
-  --breakpoint-md: 1px;
-  --breakpoint-lg: 1px;
-  --breakpoint-xl: 1px;
-  --breakpoint-2xl: 1px;
-
   /* Font families */
   --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
