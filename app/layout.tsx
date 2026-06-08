@@ -10,13 +10,19 @@ import SectionContainer from '@/components/SectionContainer'
 import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
-import { Metadata } from 'next'
+import { Metadata, Viewport } from 'next'
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-space-grotesk',
 })
+
+// ⚡ FORCED DESKTOP LAYOUT: Locks width to 1200px globally
+export const viewport: Viewport = {
+  width: 1200,
+  initialScale: 1,
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
