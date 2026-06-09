@@ -1,17 +1,14 @@
 {
   "creative-writing": 1,
-  "data-modeling": 1,
   "sci-fi": 1,
-  "ai": 2,
+  "data-modeling": 2,
+  "automation": 2,
   "e-commerce": 1,
-  "automation": 1,
   "business": 1,
   "edge-computing": 1,
   "iot": 1,
-  "machine-learning": 1,
-  "architecture": 1,
+  "machine-learning": 2,
+  "architecture": 2,
   "nextjs": 1,
-  "react": 1,
-  "web-development": 1,
-  "uiux": 1
+  "web-development": 1
 }
