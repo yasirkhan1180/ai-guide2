@@ -5,14 +5,12 @@ import NewsletterForm from 'pliny/ui/NewsletterForm'
 import FeaturedSlider from '@/components/FeaturedSlider'
 import Image from '@/components/Image'
 
-const MAX_DISPLAY = 5
-
 export default function Home({ posts }) {
-  // Isolate the top 3 newest articles exclusively for the Hero Slider
+  // 1. Isolate the top 3 newest articles exclusively for the Hero Slider
   const featuredArticles = posts.slice(0, 3)
 
-  // Exclude those first 3 articles from the regular feed list beneath it
-  const regularArticles = posts.slice(3, 3 + MAX_DISPLAY)
+  // 2. Extract ABSOLUTELY ALL remaining articles for the standard feed list
+  const regularArticles = posts.slice(3)
 
   return (
     <>
@@ -32,7 +30,7 @@ export default function Home({ posts }) {
           </p>
         </div>
 
-        {/* Premium Thumbnail-Based Article Stream Grid matching image_5645c0.jpg */}
+        {/* Premium Thumbnail-Based Article Stream Grid */}
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {posts.length <= 3 && (
             <p className="py-12 text-center text-gray-500 dark:text-gray-400">
@@ -79,7 +77,7 @@ export default function Home({ posts }) {
                       {summary}
                     </p>
 
-                    {/* Pink Pill Badges Arrays exactly mirroring mockup interface */}
+                    {/* Pink Pill Badges Arrays */}
                     <div className="mt-4 flex flex-wrap gap-2">
                       {tags.map((tag) => (
                         <span
@@ -98,15 +96,15 @@ export default function Home({ posts }) {
         </ul>
       </div>
 
-      {/* Pagination Trigger */}
-      {posts.length > 3 + MAX_DISPLAY && (
+      {/* Navigation link to the full searchable archive grid view */}
+      {posts.length > 3 && (
         <div className="flex justify-end pt-6 text-base leading-6 font-medium">
           <Link
             href="/blog"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label="All posts"
           >
-            All Posts &rarr;
+            View Blog Archive &rarr;
           </Link>
         </div>
       )}

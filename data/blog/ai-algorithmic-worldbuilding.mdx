@@ -9,7 +9,7 @@ images: ['/static/images/worldbuilding.webp', '/static/images/ai-author-collabor
 
 World-building is the silent engine of speculative fiction. For science fiction authors, creating an immersive universe demands far more than designing compelling character arcs or composing clever dialogue. It requires building an entirely functional reality from scratch—complete with its own atmospheric chemical combinations, resource scarcity dynamics, architectural rules, and biological web hierarchies.
 
-When a narrative explores highly unconventional settings, such as extreme alien biomes or entirely isolated sub-terrestrial ecosystems, maintaining internal consistency becomes an immense cognitive challenge. If a writer manually designs hundreds of localized caverns, flora networks, and atmospheric baselines, structural logical contradictions inevitably creep into the prose. 
+When a narrative explores highly unconventional settings, such as extreme alien biomes or entirely isolated sub-terrestrial ecosystems, maintaining internal consistency becomes an immense cognitive challenge. If a writer manually designs hundreds of localized caverns, flora networks, and atmospheric baselines, structural logical contradictions inevitably creep into the prose.
 
 To overcome this creative bottleneck, authors are adopting techniques from the digital game development industry: using procedural generation models and algorithmic logic to co-architect fiction layouts.
 
@@ -23,8 +23,8 @@ Procedural world-building is not about letting a machine write your novel. Inste
 
 By utilizing mathematical distributions to generate structural baselines, creators unlock distinct narrative advantages:
 
-* **Enforcing Environmental Logic:** If an algorithmic rule states that a subterranean ecosystem lacks solar radiation, the model can automatically filter out traditional surface adaptations across all simulated flora and fauna, forcing absolute evolutionary compliance.
-* **Generating Emergent Plot Points:** When a mathematical model simulates complex resource distributions or cavern collapses across a grid, it often produces unexpected layout anomalies. These physical anomalies present natural, unforced obstacles for characters to navigate.
+- **Enforcing Environmental Logic:** If an algorithmic rule states that a subterranean ecosystem lacks solar radiation, the model can automatically filter out traditional surface adaptations across all simulated flora and fauna, forcing absolute evolutionary compliance.
+- **Generating Emergent Plot Points:** When a mathematical model simulates complex resource distributions or cavern collapses across a grid, it often produces unexpected layout anomalies. These physical anomalies present natural, unforced obstacles for characters to navigate.
 
 ---
 
@@ -48,19 +48,19 @@ def initialize_cavern(width, height, fill_probability=0.45):
 def execute_simulation_step(grid):
     new_grid = grid.copy()
     width, height = grid.shape
-    
+
     for x in range(1, width - 1):
         for y in range(1, height - 1):
             # Calculate total solid rock cells surrounding the current coordinates
             sub_matrix = grid[x-1:x+2, y-1:y+2]
             solid_neighbors = np.sum(sub_matrix) - grid[x, y]
-            
+
             # Cellular Automata Rules for natural cavern smoothing
             if grid[x, y] == 1:
                 new_grid[x, y] = 1 if solid_neighbors >= 4 else 0
             else:
                 new_grid[x, y] = 1 if solid_neighbors >= 5 else 0
-                
+
     return new_grid
 
 # Configure standard layout dimensions
@@ -74,3 +74,4 @@ for _ in range(4):
 # Display the organic procedural cavern layout inside the console terminal
 for row in cave_system:
     print("".join(["██" if cell == 1 else "  " for cell in row]))
+```
