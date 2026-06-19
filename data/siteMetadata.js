@@ -11,7 +11,7 @@ const siteMetadata = {
   siteLogo: `${process.env.BASE_PATH || ''}static/images/logo.png`, // Fixed: Removed /public prefix
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   email: 'contact@ai-guide.site',
-  github: 'https://github.com/yasirkhan1180', // Updated with your actual profile
+  github: '', // Updated with your actual profile
   x: '', // Cleared so placeholder icons don't show as broken on your site
   facebook: '',
   youtube: '',

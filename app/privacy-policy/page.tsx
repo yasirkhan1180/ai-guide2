@@ -187,6 +187,30 @@ export default function PrivacyPolicy() {
           website, we strongly encourage you to contact us immediately and we will do our best
           efforts to promptly remove such information from our records.
         </p>
+
+        <h2>11. Image Copyright Disclaimer & Sourcing</h2>
+        <p>
+          Visual assets, thumbnails, and illustrative diagrams displayed across AI Guide are sourced
+          from publicly accessible open web platforms and search networks, primarily via Google
+          Images.
+        </p>
+        <ul>
+          <li>
+            <strong>Ownership:</strong> All intellectual property, trademarks, and copyrights belong
+            exclusively to their respective original owners, creators, or photographers.
+          </li>
+          <li>
+            <strong>Fair Use:</strong> AI Guide utilizes these visual materials solely for
+            non-commercial, educational, and editorial commentary purposes. No copyright
+            infringement is intended.
+          </li>
+          <li>
+            <strong>Removal Requests:</strong> If you are the rightful legal owner of any graphical
+            asset displayed on this website and object to its usage, or if you require custom
+            attribution credits, please contact us immediately. Upon verification, the targeted
+            asset will be updated or promptly removed from our systems.
+          </li>
+        </ul>
       </div>
     </div>
   )
